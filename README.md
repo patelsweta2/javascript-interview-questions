@@ -37,3 +37,22 @@
   <h4>4. factory(null): </h3>
   <p style="padding-left: 8px">a.length is 0 because setting an element at an index of null does not change the array's length.</p>
 </details>
+
+### 2. Explain the result of output:
+
+``` javascript
+function* number() {
+  for (let i = 0; i < 3; i++) {
+    console.log(i);
+    yield i;
+  }
+}
+const y = number();
+number().next();
+number().next();
+number().next();
+
+// output:- 0
+            0
+            0
+```
