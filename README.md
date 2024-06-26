@@ -131,3 +131,11 @@ number().next();
 
 // output:- 0012345
 ```
+<details>
+	<summary>Explanation</summary>
+	<ul><h4>Type Coercion in JavaScript:</h4>
+		<li>When you use the += operator, JavaScript performs type coercion based on the types of the operands.</li>
+		<li>Initially, sum is a number (0).</li>
+		<li>When sum += i is executed, i is a string (the index of arguments), so JavaScript converts sum to a string and concatenates i.</li>
+	</ul>
+</details>
