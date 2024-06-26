@@ -101,3 +101,33 @@ number().next();
 	<summary>Explanation</summary>
 	<p>The built-in arguments object contains this value.</p>
 </details>
+
+``` javascript
+(function test() {
+   let arguments;
+   console.log(arguments[0]);
+ })(200);
+
+// output:- TypeError
+
+```
+<details>
+	<summary>Explanation</summary>
+	<p>let var will shadow built-in arguments</p>
+</details>
+
+``` javascript
+(function test() {
+  function sum() {
+    var sum = 0,
+      i;
+    for (i in arguments) {
+      sum += i;
+    }
+    return sum;
+  }
+  console.log(sum(10, 20, 30, 40, 50, 60));
+})();
+
+// output:- 0012345
+```
