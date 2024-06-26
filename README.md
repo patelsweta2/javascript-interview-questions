@@ -140,7 +140,7 @@ number().next();
 	</ul>
 </details>
 
-### Explain the result of output:
+### 5. Explain the result of output:
 ``` javascript
 (function test() {
   console.log(
