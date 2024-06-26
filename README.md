@@ -56,3 +56,22 @@ number().next();
 //          0
 //          0
 ```
+### 3. Explain the result of output:
+``` javascript
+(function test() {
+  console.log(
+    {}.constructor === arguments.constructor,
+    [].constructor === arguments.constructor
+  );
+})();
+
+// output:- true false
+```
+<details>
+  <summary>Explanation</summary>
+  <ul>
+    <li>{}.constructor === arguments.constructor compares Object to Object. This is true because both refer to the same constructor.</li>
+    <li>[].constructor === arguments.constructor compares Array to Object. This is false because Array and Object are different constructors.</li>
+    <li>In non-strict mode `arguments.constructor`:- object where as strict-mode it is not an instance of object.</li>
+  </ul>
+</details>
