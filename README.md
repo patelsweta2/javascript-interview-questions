@@ -19,21 +19,21 @@
 
 ```
 <details>
-  #### Array.prototype.pop.apply(arguments):
-  Array.prototype.pop is a method that removes the last element from an array and returns that element.
-  apply(arguments) calls the pop method on the arguments object (which is array-like but not a true array). This removes and returns the last argument passed to factory.
-  ###### 1. factory(0):
-  arguments is [0]
-  Array.prototype.pop.apply(arguments) returns 0
-  a[0] = 1, so a becomes [1]
-  a.length is 1
-  ##### 2. factory(100):
-  arguments is [100]
-  Array.prototype.pop.apply(arguments) returns 100
-  a[100] = 1, so a becomes an array with 101 elements, with 1 at the 100th index.
-  a.length is 101
-  ##### 3. factory(Infinity):
-  a.length is 0 because setting an element at an index of Infinity does not change the array's length.
-  ##### 4. factory(null):
-  a.length is 0 because setting an element at an index of null does not change the array's length.
+  <summary> Array.prototype.pop.apply(arguments): </summary>
+  <p>Array.prototype.pop is a method that removes the last element from an array and returns that element.</p>
+  <p>apply(arguments) calls the pop method on the arguments object (which is array-like but not a true array). This removes and returns the last argument passed to factory.</p>
+  <h4> 1. factory(0): </h4>
+  <p>arguments is [0]</p>
+  <p>Array.prototype.pop.apply(arguments) returns 0 </p>
+  <p>a[0] = 1, so a becomes [1] </p>
+ <p>a.length is 1</p>
+  <h4> 2. factory(100): </h4>
+ <p> arguments is [100] </p>
+ <p>Array.prototype.pop.apply(arguments) returns 100 </p>
+ <p>a[100] = 1, so a becomes an array with 101 elements, with 1 at the 100th index.</p>
+  <p>a.length is 101</p>
+  <h4>3. factory(Infinity):</h4>
+  <p>a.length is 0 because setting an element at an index of Infinity does not change the array's length.</p>
+  <h4>4. factory(null): </h4>
+  <p>a.length is 0 because setting an element at an index of null does not change the array's length.</p>
 </details>
