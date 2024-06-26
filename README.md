@@ -53,6 +53,6 @@ number().next();
 number().next();
 
 // output:- 0
-            0
-            0
+//          0
+//          0
 ```
