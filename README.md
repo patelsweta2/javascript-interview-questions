@@ -17,3 +17,9 @@
 })();
 
 ```
+<details>
+  ``` javascript
+  // output 
+  1 101 0 0
+  ```
+</details>
