@@ -34,6 +34,6 @@
   <p style="padding-left: 8px">a.length is 101</p>
   <h4>3. factory(Infinity):</h4>
   <p style="padding-left: 8px">a.length is 0 because setting an element at an index of Infinity does not change the array's length.</p>
-  <h4>4. factory(null): </h4>
+  <h4>4. factory(null): </h3>
   <p style="padding-left: 8px">a.length is 0 because setting an element at an index of null does not change the array's length.</p>
 </details>
