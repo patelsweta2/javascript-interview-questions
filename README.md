@@ -75,3 +75,16 @@ number().next();
     <li>In non-strict mode `arguments.constructor`:- object where as strict-mode it is not an instance of object.</li>
   </ul>
 </details>
+
+### 4. Explain the result of output:
+``` javascript
+(function test (arguments) {
+	console.log(arguments[0]);
+})(100);
+
+// output:- undefined
+```
+<details>
+  <summary>Explanation</summary>
+  <p>undefined(argument is num i.e 100) not an array</p>
+</details>
