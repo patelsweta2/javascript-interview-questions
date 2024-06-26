@@ -139,3 +139,17 @@ number().next();
 		<li>When sum += i is executed, i is a string (the index of arguments), so JavaScript converts sum to a string and concatenates i.</li>
 	</ul>
 </details>
+
+### Explain the result of output:
+``` javascript
+(function test() {
+  console.log(
+    function () {} instanceof Object,
+    function () {} instanceof Function,
+    Function instanceof Object,
+    Object instanceof Function
+  );
+})();
+// output:- true true true true
+
+```
