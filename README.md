@@ -153,3 +153,11 @@ number().next();
 // output:- true true true true
 
 ```
+<details>
+	<summary>Explanation</summary>
+	<ul>
+		<li>Every function is an instance of both Object and Function.</li>
+		<li>The Function constructor is an instance of Object.</li>
+		<li>The Object constructor is an instance of Function.</li>
+	</ul>
+</details>
