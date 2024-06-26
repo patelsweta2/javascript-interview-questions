@@ -19,21 +19,21 @@
 
 ```
 <details>
-  <summary> Array.prototype.pop.apply(arguments): </summary>
-  <p>Array.prototype.pop is a method that removes the last element from an array and returns that element.</p>
-  <p>apply(arguments) calls the pop method on the arguments object (which is array-like but not a true array). This removes and returns the last argument passed to factory.</p>
+  <summary> Explanation </summary>
+  <p style="padding-left: 8px">Array.prototype.pop is a method that removes the last element from an array and returns that element.</p>
+  <p style="padding-left: 8px">apply(arguments) calls the pop method on the arguments object (which is array-like but not a true array). This removes and returns the last argument passed to factory.</p>
   <h4> 1. factory(0): </h4>
-  <p>arguments is [0]</p>
-  <p>Array.prototype.pop.apply(arguments) returns 0 </p>
-  <p>a[0] = 1, so a becomes [1] </p>
- <p>a.length is 1</p>
+  <p style="padding-left: 8px">arguments is [0]</p>
+  <p style="padding-left: 8px">Array.prototype.pop.apply(arguments) returns 0 </p>
+  <p style="padding-left: 8px">a[0] = 1, so a becomes [1] </p>
+ <p style="padding-left: 8px">a.length is 1</p>
   <h4> 2. factory(100): </h4>
- <p> arguments is [100] </p>
- <p>Array.prototype.pop.apply(arguments) returns 100 </p>
- <p>a[100] = 1, so a becomes an array with 101 elements, with 1 at the 100th index.</p>
-  <p>a.length is 101</p>
+ <p style="padding-left: 8px"> arguments is [100] </p>
+ <p style="padding-left: 8px">Array.prototype.pop.apply(arguments) returns 100 </p>
+ <p style="padding-left: 8px">a[100] = 1, so a becomes an array with 101 elements, with 1 at the 100th index.</p>
+  <p style="padding-left: 8px">a.length is 101</p>
   <h4>3. factory(Infinity):</h4>
-  <p>a.length is 0 because setting an element at an index of Infinity does not change the array's length.</p>
+  <p style="padding-left: 8px">a.length is 0 because setting an element at an index of Infinity does not change the array's length.</p>
   <h4>4. factory(null): </h4>
-  <p>a.length is 0 because setting an element at an index of null does not change the array's length.</p>
+  <p style="padding-left: 8px">a.length is 0 because setting an element at an index of null does not change the array's length.</p>
 </details>
