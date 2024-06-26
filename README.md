@@ -88,3 +88,16 @@ number().next();
   <summary>Explanation</summary>
   <p>undefined(argument is num i.e 100) not an array</p>
 </details>
+
+```javascript
+(function test() {
+  var arguments;
+  console.log(arguments[0]);
+})(200);
+
+// output :- 200
+```
+<details>
+	<summary>Explanation</summary>
+	<p>The built-in arguments object contains this value.</p>
+</details>
