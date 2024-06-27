@@ -192,3 +192,32 @@ console.log(
 // output :- true false true false true 'function' 'function'
 
 ```
+
+``` javascript
+(function test() {
+  console.log(
+    Function === Object.constructor,
+    Function === Number.constructor,
+    Function === Function.constructor,
+    Function === Window.constructor,
+    Object === Object.prototype.constructor,
+    Number === Number.prototype.constructor,
+    Array === Array.prototype.constructor,
+    Window === Window.prototype.constructor
+  );
+})();
+// output :- true true true true true true true true
+
+```
+
+``` javascript
+(function test() {
+  console.log(
+    typeof Object.prototype,
+    typeof String.prototype,
+    typeof RegExp.prototype
+  );
+})();
+// output:- object object object
+
+```
