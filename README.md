@@ -161,3 +161,34 @@ number().next();
 		<li>The Object constructor is an instance of Function.</li>
 	</ul>
 </details>
+### 6. Explain the result of output:
+
+``` javascript
+(function test() {
+  console.log(function () {}.apply.length);
+})();
+
+// output :- 2
+
+```
+<details>
+	<summary>Explanation</summary>
+	<p>The apply method is defined to accept two parameters (thisArg and argArray), hence its length property is 2.</p>
+</details>
+
+### 7. Explain the result of output:
+
+``` javascript
+console.log(
+  Function instanceof Function,
+  Function.prototype instanceof Function,
+  Function.prototype.isPrototypeOf(Function),
+  Function === Function.prototype,
+  Function === Function.prototype.constructor,
+  typeof Function.prototype,
+  typeof Function
+);
+
+// output :- true false true false true 'function' 'function'
+
+```
