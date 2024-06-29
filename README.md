@@ -223,7 +223,7 @@ console.log(
 ```
 ### 8. Async/Await:
 
-#### 8.1
+#### 8.1:
 
 ``` javascript
 function intro(name) {
@@ -241,3 +241,23 @@ console.log(myIntro);
 	<summary>Explanation</summary>
 	<p>The intro function calls setTimeout, but it doesn't have a return statement that waits for the setTimeout to complete. As a result, intro returns undefined immediately because there is no explicit return value.</p>
 </details>
+
+#### 8.1.1:
+
+``` javascript
+function intro(name, callback) {
+  setTimeout(() => {
+    callback(`my name is ${name}`);
+  }, 1000);
+}
+
+const myIntro = () => {
+  intro("Sweta", (result) => {
+    console.log(result);
+  });
+};
+myIntro();
+
+// output:- my name is Sweta
+
+```
