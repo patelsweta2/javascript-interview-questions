@@ -313,3 +313,7 @@ console.log(output);
 
 // output:- Promise
 ```
+<details>
+	<summary>Explanation</summary>
+	<p>Js Engine by default convert the output of async function as Promise.</p>
+</details>
