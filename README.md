@@ -354,3 +354,31 @@ console.log("end");
 // this is a resolved promise
 // 1
 ```
+
+#### 8.6
+
+``` javascript
+function promiseGen() {
+  console.log("Hello how are you?");
+  return "Some meaningfull data";
+}
+console.log("start");
+async function test() {
+  console.log("before promiseGen");
+  const promiseResult = await promiseGen();
+  console.log(promiseGen);
+  console.log("after promiseGen");
+}
+
+test();
+console.log("end");
+// output:-
+
+// start
+// before promiseGen
+// Hello how are you?
+// end
+// Some meaningfull data
+// after promiseGen
+
+```
