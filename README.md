@@ -317,3 +317,40 @@ console.log(output);
 	<summary>Explanation</summary>
 	<p>Js Engine by default convert the output of async function as Promise.</p>
 </details>
+
+#### 8.5:
+
+``` javascript
+function promiseGen() {
+  console.log("inside PromiseGen");
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("this is a resolved promise");
+    }, 5000);
+  });
+}
+console.log("start");
+
+async function test() {
+  const a = 1;
+  console.log("before promise");
+  const promiseResult = await promiseGen();
+  console.log("after promise");
+  console.log(promiseResult);
+  console.log(a);
+}
+console.log("mid");
+test();
+console.log("end");
+
+// output:-
+
+// start
+// mid
+// before promise
+// inside PromiseGen
+// end
+// after promise
+// this is a resolved promise
+// 1
+```
