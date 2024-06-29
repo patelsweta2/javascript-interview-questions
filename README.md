@@ -261,3 +261,46 @@ myIntro();
 // output:- my name is Sweta
 
 ```
+
+#### 8.2
+
+``` javascript
+function introPromGen(name) {
+  return new Promise((resolve, reject) => {
+    const condition = false;
+    if (condition) {
+      setTimeout(() => {
+        resolve(`my name is ${name}`);
+      }, 1000);
+    } else {
+      reject("no name found");
+    }
+  });
+}
+
+function cityPromGen(city) {
+  return new Promise((resolve, reject) => {
+    const condition = true;
+    if (condition) {
+      setTimeout(() => {
+        resolve(`${city}`);
+      }, 1000);
+    } else {
+      reject("no city found");
+    }
+  });
+}
+
+introPromGen("Sweta")
+  .then((data) => {
+    console.log(data);
+    return cityPromGen("Patna");
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => console.log(err));
+
+// output:- no name found
+
+```
