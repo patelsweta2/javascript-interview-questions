@@ -221,3 +221,17 @@ console.log(
 // output:- object object object
 
 ```
+### 8. Async/Await:
+
+``` javascript
+function intro(name) {
+  setTimeout(() => {
+    return `my name is ${name}`;
+  });
+}
+
+const myIntro = intro("Sweta");
+console.log(myIntro);
+ // output :- undefined
+
+```
