@@ -304,3 +304,12 @@ introPromGen("Sweta")
 // output:- no name found
 
 ```
+#### 8.4
+
+``` javascript
+async function test() {}
+const output = test();
+console.log(output);
+
+// output:- Promise
+```
