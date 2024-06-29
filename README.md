@@ -229,7 +229,7 @@ console.log(
 function intro(name) {
   setTimeout(() => {
     return `my name is ${name}`;
-  });
+  },1000);
 }
 
 const myIntro = intro("Sweta");
